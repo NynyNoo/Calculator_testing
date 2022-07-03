@@ -22,9 +22,13 @@ namespace Calculator
         }
         public static double Divide(double firstNumber, double secondNumber)
         {
+            double result;
             if (secondNumber == 0)
-                throw new Exception("Zero");
-            return firstNumber / secondNumber;
+                result = 0;
+            else
+                result = firstNumber / secondNumber;
+            return result;
+
         }
     }
 }
